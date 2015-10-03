@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.buffapps.hassan.chatapp.HomeActivity"
+                android:background="#16a085">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chat Shat"
+        android:id="@+id/headerText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        android:id="@+id/messagesListView"
+        android:layout_below="@+id/headerText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/messagesListView"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/messageToSend"
+            android:layout_weight="80"
+            android:hint="say anything"
+            android:layout_gravity="bottom|left"
+            android:background="#ffffff"
+            android:textSize="20sp"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEND"
+            android:id="@+id/sendButton"
+            android:layout_weight="20"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="LogOut"
+        android:id="@+id/logoutButton"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/headerText"
+        android:layout_alignRight="@+id/headerText"
+        android:layout_alignEnd="@+id/headerText"/>
+</RelativeLayout>

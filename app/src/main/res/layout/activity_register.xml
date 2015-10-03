@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.buffapps.hassan.chatapp.RegisterActivity"
+                android:background="#27ae60">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/registerTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:textSize="24sp"
+        android:textColor="#80ffffff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/firstName"
+        android:layout_below="@+id/registerTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="#ffffff"
+        android:hint="first name"
+        android:gravity="center_horizontal"
+        android:width="250dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/lastName"
+        android:layout_below="@+id/firstName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="last name"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:width="250dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email"
+        android:width="250dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/lastName"
+        android:layout_alignLeft="@+id/lastName"
+        android:layout_alignStart="@+id/lastName"
+        android:layout_marginTop="20dp"
+        android:hint="email"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:width="250dp"
+        android:hint="password"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/confirmPassword"
+        android:background="#ffffff"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="confirm password"
+        android:width="250dp"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:id="@+id/registerButton"
+        android:layout_below="@+id/confirmPassword"
+        android:layout_alignLeft="@+id/registerTitle"
+        android:layout_alignStart="@+id/registerTitle"
+        android:layout_marginTop="35dp"
+        android:layout_alignRight="@+id/registerTitle"
+        android:layout_alignEnd="@+id/registerTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signInTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sign_in"
+        android:layout_marginBottom="15dp"/>
+</RelativeLayout>
